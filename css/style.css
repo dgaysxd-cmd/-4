@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 40px 20px;
+    min-height: 100vh;
+    background-color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: antiquewhite;
+}
+.user-tags{
+display: flex;
+flex-wrap: wrap;
+gap: 16px;
+max-width: 1000px;
+}
+.user-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px; /* Расстояние между аватаром и текстом */
+    padding: 8px 24px 8px 8px; /* Отступы: сверху/снизу 8px, справа 24px, слева 8px */
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0; /* Тонкая светло-серая рамка */
+    border-radius: 100px; /* Форма "таблетки" */
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer; /* Чтобы было понятно, что на них можно кликнуть */
+}
+.user-tag__avatar{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+
+}
+.user-tag__name{
+    color: black;
+    font-size: 17px;
+    font-weight: 500;
+    white-space: nowrap;
+}
